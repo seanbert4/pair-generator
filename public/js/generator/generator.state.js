@@ -2,8 +2,8 @@
 
 app.config(function($stateProvider, $urlRouterProvider){
 	$stateProvider.state('generator', {
-		url: '/home/generator',
-		templateUrl: '/public/js/generator/generator.template.html'
+		url: '/generator',
+		templateUrl: '/public/js/generator/generator.template.html',
+		controller: 'GeneratorController'
 	});
-	$urlRouterProvider.otherwise('/home');
 });
